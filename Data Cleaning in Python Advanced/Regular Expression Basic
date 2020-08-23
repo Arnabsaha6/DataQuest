@@ -1,3 +1,12 @@
 1. Introduction
 import pandas as pd
 hn = pd.read_csv("hacker_news.csv")
+
+2. The Regular Expression Module
+import re
+titles = hn["title"].tolist()
+python_mentions = 0
+pattern = "[Pp]ython"
+for t in titles:
+    if re.search(pattern, t):
+        python_mentions += 1
