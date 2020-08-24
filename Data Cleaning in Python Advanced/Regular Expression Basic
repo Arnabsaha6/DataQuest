@@ -53,3 +53,10 @@ java_titles = titles[titles.str.contains(pattern)]
 9. Word Boundaries
 pattern = r"\b[Jj]ava\b"
 java_titles = titles[titles.str.contains(pattern)]
+
+10. Matching at the Start and End of Strings
+pattern_beginning = r"^\[\w+\]"
+beginning_count = titles.str.contains(pattern_beginning).sum()
+
+pattern_ending =  r"\[\w+\]$"
+ending_count = titles.str.contains(pattern_ending).sum()
