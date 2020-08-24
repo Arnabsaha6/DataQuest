@@ -36,3 +36,16 @@ tag_count = tag_titles.shape[0]
 # pattern = r"\[\w+\]"
 pattern = r"\[(\w+)\]"
 tag_freq = titles.str.extract(pattern).value_counts()
+
+
+8. Negative Character Classes
+def first_10_matches(pattern):
+    """
+    Return the first 10 story titles that match
+    the provided regular expression
+    """
+    all_matches = titles[titles.str.contains(pattern)]
+    first_10 = all_matches.head(10)
+    return first_10
+pattern = r"[Jj]ava[^Ss]"
+java_titles = titles[titles.str.contains(pattern)]
