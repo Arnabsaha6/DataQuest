@@ -37,7 +37,6 @@ tag_count = tag_titles.shape[0]
 pattern = r"\[(\w+)\]"
 tag_freq = titles.str.extract(pattern).value_counts()
 
-
 8. Negative Character Classes
 def first_10_matches(pattern):
     """
@@ -57,6 +56,13 @@ java_titles = titles[titles.str.contains(pattern)]
 10. Matching at the Start and End of Strings
 pattern_beginning = r"^\[\w+\]"
 beginning_count = titles.str.contains(pattern_beginning).sum()
-
 pattern_ending =  r"\[\w+\]$"
 ending_count = titles.str.contains(pattern_ending).sum()
+
+11. Challenge: Using Flags to Modify Regex Patterns
+import re
+email_tests = pd.Series(['email', 'Email', 'e Mail', 'e mail', 'E-mail',
+              'e-mail', 'eMail', 'E-Mail', 'EMAIL', 'emails', 'Emails',
+              'E-Mails'])
+pattern = r"\be[\-\s]?mails?\b"
+email_mentions = titles.str.contains(pattern, flags=re.I).sum()
