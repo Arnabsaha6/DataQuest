@@ -1,5 +1,4 @@
 1. Introduction
-
 import pandas as pd
 import re
 hn = pd.read_csv("hacker_news.csv")
@@ -8,7 +7,6 @@ sql_pattern = r"SQL"
 sql_counts = titles.str.contains(sql_pattern, flags=re.I).sum()
 
 2. Capture Groups
-
 hn_sql = hn[hn['title'].str.contains(r"\w+SQL", flags=re.I)].copy()
 hn_sql["flavor"] = hn_sql["title"].str.extract(r"(\w+SQL)", re.I)
 hn_sql["flavor"] = hn_sql["flavor"].str.lower()
