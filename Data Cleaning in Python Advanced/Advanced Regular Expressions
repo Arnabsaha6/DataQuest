@@ -27,3 +27,7 @@ def first_10_matches(pattern):
 #pattern = r"\b[Cc]\b"
 pattern = r"\b[Cc]\b[^.+]"
 first_ten = first_10_matches(pattern)
+
+5. Using Lookarounds to Control Matches Based on Surrounding Text
+pattern = r"(?<!Series\s)\b[Cc]\b(?![\+\.])"
+c_mentions = titles.str.contains(pattern).sum()
