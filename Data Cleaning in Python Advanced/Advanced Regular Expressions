@@ -31,3 +31,15 @@ first_ten = first_10_matches(pattern)
 5. Using Lookarounds to Control Matches Based on Surrounding Text
 pattern = r"(?<!Series\s)\b[Cc]\b(?![\+\.])"
 c_mentions = titles.str.contains(pattern).sum()
+
+6.BackReferences: Using Capture Groups in a RegEx Pattern
+pattern = r"\b(\w+)\s\1\b"
+repeated_words = titles[titles.str.contains(pattern)]
+
+7.Substituting Regular Expression Matches
+
+8.Extracting Domains from URLs
+
+9.Extracting URL Parts Using Multiple Capture Groups
+
+10.Using Named Capture Groups to Extract Data
