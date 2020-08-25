@@ -1,4 +1,23 @@
 1.The JSON Format
+world_cup_str = """
+[
+    {
+        "team_1": "France",
+        "team_2": "Croatia",
+        "game_type": "Final",
+        "score" : [4, 2]
+    },
+    {
+        "team_1": "Belgium",
+        "team_2": "England",
+        "game_type": "3rd/4th Playoff",
+        "score" : [2, 0]
+    }
+]
+"""
+import json
+world_cup_obj = json.loads(world_cup_str)
+
 2.Reading a JSON file
 3.Deleting Dictionary Keys
 4.Writing List Comprehensions
