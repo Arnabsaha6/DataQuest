@@ -14,3 +14,8 @@ hn_sql["flavor"] = hn_sql["title"].str.extract(r"(\w+SQL)", re.I)
 hn_sql["flavor"] = hn_sql["flavor"].str.lower()
 sql_pivot = hn_sql.pivot_table(index="flavor",values="num_comments", aggfunc='mean')
 
+3. Using Capture Groups to Extract Data
+pattern = r"[Pp]ython ([\d\.]+)"
+py_versions = titles.str.extract(pattern)
+py_versions_freq = dict(py_versions.value_counts())
+
