@@ -19,3 +19,11 @@ pattern = r"[Pp]ython ([\d\.]+)"
 py_versions = titles.str.extract(pattern)
 py_versions_freq = dict(py_versions.value_counts())
 
+4. Counting Mentions of the 'C' Language
+def first_10_matches(pattern):
+	all_matches = titles[titles.str.contains(pattern)]
+	first_10 = all_matches.head(10)
+	return first_10
+#pattern = r"\b[Cc]\b"
+pattern = r"\b[Cc]\b[^.+]"
+first_ten = first_10_matches(pattern)
