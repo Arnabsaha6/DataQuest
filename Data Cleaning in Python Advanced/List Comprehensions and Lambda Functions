@@ -1,0 +1,14 @@
+1.The JSON Format
+2.Reading a JSON file
+3.Deleting Dictionary Keys
+4.Writing List Comprehensions
+5.Using List Comprehensions to Transform and Create Lists
+6.Using List Comprehensions to Reduce a List
+7.Passing Functions as Arguments
+8.Lambda Functions
+9.Using Lambda Functions to Analyze JSON data
+10.Reading JSON files into pandas
+11.Exploring Tags Using the Apply Function
+12.Extracting Tags Using Apply with a Lambda Function
+13.Next Steps
+14.Takeaways
