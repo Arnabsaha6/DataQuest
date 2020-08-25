@@ -1,1 +1,9 @@
+1. Introduction
 
+import pandas as pd
+import re
+
+hn = pd.read_csv("hacker_news.csv")
+titles = hn['title']
+sql_pattern = r"SQL"
+sql_counts = titles.str.contains(sql_pattern, flags=re.I).sum()
