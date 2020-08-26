@@ -57,6 +57,9 @@ def get_num_comments(story):
     return story['numComments']
 most_comments = max(hn_clean, key=get_num_comments)
 8.Lambda Functions
+# def multiply(a, b):
+#    return a * b
+multiply = lambda a, b: a * b
 9.Using Lambda Functions to Analyze JSON data
 10.Reading JSON files into pandas
 11.Exploring Tags Using the Apply Function
