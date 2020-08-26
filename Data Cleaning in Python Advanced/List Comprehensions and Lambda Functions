@@ -46,6 +46,8 @@ for d in hn:
 hn_clean = [del_key(d, 'createdAtI') for d in hn]
 
 5.Using List Comprehensions to Transform and Create Lists
+urls = [d['url'] for d in hn_clean]
+
 6.Using List Comprehensions to Reduce a List
 7.Passing Functions as Arguments
 8.Lambda Functions
