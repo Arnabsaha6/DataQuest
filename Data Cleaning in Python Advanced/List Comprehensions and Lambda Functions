@@ -61,6 +61,9 @@ most_comments = max(hn_clean, key=get_num_comments)
 #    return a * b
 multiply = lambda a, b: a * b
 9.Using Lambda Functions to Analyze JSON data
+hn_sorted_points = sorted(hn_clean, key=lambda d: d['points'], reverse=True)
+top_5_titles = [d['title'] for d in hn_sorted_points[:5]]
+
 10.Reading JSON files into pandas
 11.Exploring Tags Using the Apply Function
 12.Extracting Tags Using Apply with a Lambda Function
