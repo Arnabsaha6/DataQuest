@@ -53,6 +53,9 @@ thousand_points = [d for d in hn_clean if d['points'] > 1000]
 num_thousand_points = len(thousand_points)
 
 7.Passing Functions as Arguments
+def get_num_comments(story):
+    return story['numComments']
+most_comments = max(hn_clean, key=get_num_comments)
 8.Lambda Functions
 9.Using Lambda Functions to Analyze JSON data
 10.Reading JSON files into pandas
