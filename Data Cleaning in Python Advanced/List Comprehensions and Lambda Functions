@@ -49,6 +49,9 @@ hn_clean = [del_key(d, 'createdAtI') for d in hn]
 urls = [d['url'] for d in hn_clean]
 
 6.Using List Comprehensions to Reduce a List
+thousand_points = [d for d in hn_clean if d['points'] > 1000]
+num_thousand_points = len(thousand_points)
+
 7.Passing Functions as Arguments
 8.Lambda Functions
 9.Using Lambda Functions to Analyze JSON data
