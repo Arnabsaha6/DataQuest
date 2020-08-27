@@ -79,6 +79,12 @@ for v in range(1,6):
 vc_null_df = pd.DataFrame(vc_null_data, columns=col_labels)
 
 7.Finding the Most Common Values Across Multiple Columns
+v_cols = [c for c in mvc.columns if c.startswith("vehicle")]
+vehicles = mvc[v_cols]
+vehicles_1d = vehicles.stack()
+vehicles_counts = vehicles_1d.value_counts()
+top10_vehicles = vehicles_counts.head(10)
+
 8.Filling Unknown Values with a Placeholder
 9.Missing Data in the "Location" Columns
 10.Imputing Location Data
