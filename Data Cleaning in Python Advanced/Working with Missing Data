@@ -119,3 +119,11 @@ for v in range(1,6):
 summary_after = summarize_missing()
 
 10.Imputing Location Data
+sup_data = pd.read_csv('supplemental_data.csv')
+
+location_cols = ['location', 'on_street', 'off_street', 'borough']
+null_before = mvc[location_cols].isnull().sum()
+for col in location_cols:
+    mvc[col] = mvc[col].mask(mvc[col].isnull(), sup_data[col])
+
+null_after = mvc[location_cols].isnull().sum()
