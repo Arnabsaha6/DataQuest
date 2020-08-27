@@ -118,5 +118,4 @@ for v in range(1,6):
 
 summary_after = summarize_missing()
 
-9.Missing Data in the "Location" Columns
 10.Imputing Location Data
