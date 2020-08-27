@@ -11,6 +11,16 @@ killed_mask = killed_manual_sum != killed['total_killed']
 killed_non_eq = killed[killed_mask]
 
 3.Filling and Verifying the Killed and Injured Data
+import numpy as np
+# fix the killed values
+killed['total_killed'] = killed['total_killed'].mask(killed['total_killed'].isnull(), killed_manual_sum)
+killed['total_killed'] = killed['total_killed'].mask(killed['total_killed'] != killed_manual_sum, np.nan)
+# Create an injured dataframe and manually sum values
+injured = mvc[[col for col in mvc.columns if 'injured' in col]].copy()
+injured_manual_sum = injured.iloc[:,:3].sum(axis=1)
+injured['total_injured'] = injured['total_injured'].mask(injured['total_injured'].isnull(), injured_manual_sum)
+injured['total_injured'] = injured['total_injured'].mask(injured['total_injured'] != injured_manual_sum, np.nan)
+
 4.Assigning the Corrected Data Back to the Main Dataframe
 5.Visualizing Missing Data with Plots
 6.Analyzing Correlations in Missing Data
