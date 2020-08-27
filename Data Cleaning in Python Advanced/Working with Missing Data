@@ -22,6 +22,9 @@ injured['total_injured'] = injured['total_injured'].mask(injured['total_injured'
 injured['total_injured'] = injured['total_injured'].mask(injured['total_injured'] != injured_manual_sum, np.nan)
 
 4.Assigning the Corrected Data Back to the Main Dataframe
+mvc['total_injured'] = injured['total_injured']
+mvc['total_killed'] = killed['total_killed']
+
 5.Visualizing Missing Data with Plots
 6.Analyzing Correlations in Missing Data
 7.Finding the Most Common Values Across Multiple Columns
