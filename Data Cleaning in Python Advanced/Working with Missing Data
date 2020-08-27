@@ -1,4 +1,7 @@
 1.Introduction
+import pandas as pd
+mvc = pd.read_csv("nypd_mvc_2018.csv")
+null_counts = mvc.isnull().sum()
 
 2.Verifying the Total Columns
 3.Filling and Verifying the Killed and Injured Data
