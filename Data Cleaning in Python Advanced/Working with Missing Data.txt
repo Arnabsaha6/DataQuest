@@ -60,7 +60,6 @@ def plot_null_correlations(df):
 veh_cols = [c for c in mvc.columns if 'vehicle' in c]
 plot_null_correlations(mvc[veh_cols])
 
-
 6.Analyzing Correlations in Missing Data
 col_labels = ['v_number', 'vehicle_missing', 'cause_missing']
 vc_null_data = []
@@ -120,10 +119,8 @@ summary_after = summarize_missing()
 
 10.Imputing Location Data
 sup_data = pd.read_csv('supplemental_data.csv')
-
 location_cols = ['location', 'on_street', 'off_street', 'borough']
 null_before = mvc[location_cols].isnull().sum()
 for col in location_cols:
     mvc[col] = mvc[col].mask(mvc[col].isnull(), sup_data[col])
-
 null_after = mvc[location_cols].isnull().sum()
