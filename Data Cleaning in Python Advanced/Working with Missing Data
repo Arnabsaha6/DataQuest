@@ -1,1 +1,11 @@
+1.Introduction
 
+2.Verifying the Total Columns
+3.Filling and Verifying the Killed and Injured Data
+4.Assigning the Corrected Data Back to the Main Dataframe
+5.Visualizing Missing Data with Plots
+6.Analyzing Correlations in Missing Data
+7.Finding the Most Common Values Across Multiple Columns
+8.Filling Unknown Values with a Placeholder
+9.Missing Data in the "Location" Columns
+10.Imputing Location Data
