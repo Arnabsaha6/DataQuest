@@ -22,5 +22,9 @@ cd /home
 ls dq
 ls -al dq/prize_winners
 7.Shortcuts for Filesystem Navigation
+cd dq/prize_winners
+cd -
+cd
+
 8.Next Steps
 9.Takeaways
