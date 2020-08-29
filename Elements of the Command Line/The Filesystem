@@ -17,6 +17,10 @@ ls -Ahl
 cd /home/dq/prize_winners
 cd /home
 6.Absolute and Relative Paths
+answer false true false
+cd /home
+ls dq
+ls -al dq/prize_winners
 7.Shortcuts for Filesystem Navigation
 8.Next Steps
 9.Takeaways
