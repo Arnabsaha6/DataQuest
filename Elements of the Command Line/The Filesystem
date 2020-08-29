@@ -9,6 +9,10 @@ ls
 ls-p
 
 4.Inspecting Directories Thoroughly
+ls prize_winners
+ls -A prize_winners
+ls -Ahl
+
 5.Navigating the Filesystem
 6.Absolute and Relative Paths
 7.Shortcuts for Filesystem Navigation
