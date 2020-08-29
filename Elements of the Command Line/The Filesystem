@@ -14,6 +14,8 @@ ls -A prize_winners
 ls -Ahl
 
 5.Navigating the Filesystem
+cd /home/dq/prize_winners
+cd /home
 6.Absolute and Relative Paths
 7.Shortcuts for Filesystem Navigation
 8.Next Steps
