@@ -4,6 +4,9 @@ answer false true true
 2.Working Directory
 pwd
 3.Inspecting Directories
+ls
+ls-p
+
 4.Inspecting Directories Thoroughly
 5.Navigating the Filesystem
 6.Absolute and Relative Paths
