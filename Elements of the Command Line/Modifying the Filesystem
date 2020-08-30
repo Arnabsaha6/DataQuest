@@ -11,6 +11,9 @@ cp /home/dq/prize_winners/.mike /home/dq/prize_winners/mike
 6.Copying Directories
 cp -R prize_winners/ brats/
 7.Deleting Directories and Files
+cd
+rm augustus violet veruca tv
+rm -R prize_winners
 8.Moving and Renaming Directories and Files
 9.Next Steps
 10.Takeaways
