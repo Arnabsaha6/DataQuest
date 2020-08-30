@@ -1,4 +1,6 @@
 1.Creating Directories
+mkdir /home/dq/brets
+mkdir dir2 dir3 dir5
 2.Deleting Directories
 3.Failing to Delete Directories
 4.Copying Files
