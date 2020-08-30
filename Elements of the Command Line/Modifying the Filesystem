@@ -2,6 +2,9 @@
 mkdir /home/dq/brets
 mkdir dir2 dir3 dir5
 2.Deleting Directories
+rmdir brets
+mkdir brats
+rmdir dir2 dir3 dir5
 3.Failing to Delete Directories
 4.Copying Files
 5.Hidden Dangers of Copying Files
