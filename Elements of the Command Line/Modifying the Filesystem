@@ -17,5 +17,3 @@ rm -R prize_winners
 8.Moving and Renaming Directories and Files
 mv /home/dq/brats/prize_winners/mike /home/dq/brats
 mv /home/dq/brats/prize_winners/.mike /home/dq/brats/prize_winners/Mike
-9.Next Steps
-10.Takeaways
