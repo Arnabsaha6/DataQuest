@@ -5,6 +5,10 @@ ls v*
 cd /home/dq/brats
 ls ????
 4.Escaping Characters
+cd ~/brats
+cp augustus a\*
+cp tv 't?'
+ls 'a*' 't?'
 5.The Wildcard []
 6.Other Wildcards
 7.Summary and Practice
