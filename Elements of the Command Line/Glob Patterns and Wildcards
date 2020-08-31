@@ -2,6 +2,8 @@
 cd ~/brats
 ls v*
 3.The ? Wildcard
+cd /home/dq/brats
+ls ????
 4.Escaping Characters
 5.The Wildcard []
 6.Other Wildcards
