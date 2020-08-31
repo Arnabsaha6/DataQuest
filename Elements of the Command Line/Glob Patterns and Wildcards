@@ -22,6 +22,8 @@ mv *l html_files
 mv 201[!9]* archive
 mv 2019* data
 8.Searching for Files
+find / -name '*.b64'
+mv /sqlite-autoconf-3210000/tea/win/you_found_it.b64 ~
 9.Next Steps
 10.Takeaways
 
