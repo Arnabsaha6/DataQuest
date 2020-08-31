@@ -11,6 +11,7 @@ ls -l
 mkdir oops
 cd root
 4.Permissions
+answer y y n y n
 5.Changing Permissions: Symbolic Notation
 6.The File Status Command
 7.Changing Permissions: Octal Notation
