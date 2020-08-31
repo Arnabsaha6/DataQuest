@@ -2,10 +2,14 @@
 whoami
 id
 2.Groups
-3.Revisiting ls
 groups
 cd
 ls -l
+3.Revisiting ls
+cd /
+ls -l
+mkdir oops
+cd root
 4.Permissions
 5.Changing Permissions: Symbolic Notation
 6.The File Status Command
