@@ -13,6 +13,12 @@ cd root
 4.Permissions
 answer y y n y n
 5.Changing Permissions: Symbolic Notation
+cd
+chmod a+rwx mistery_file
+chmod g+wx,o+w Trash
+chmod g+x config_file_1
+chmod g+x,o=r config_file_2
+chmod a=rwx,o-x d*
 6.The File Status Command
 7.Changing Permissions: Octal Notation
 8.The Superuser
