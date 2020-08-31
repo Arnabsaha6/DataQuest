@@ -13,6 +13,7 @@ ls 'a*' 't?'
 cd /home/dq/brats
 ls *[!aiueo]
 6.Other Wildcards
+ls *[[:alnum:]]
 7.Summary and Practice
 8.Searching for Files
 9.Next Steps
