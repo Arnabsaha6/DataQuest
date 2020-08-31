@@ -26,4 +26,6 @@ answer 0776
 answer 602 171 ---r--r-x
 chmod 222 /home/dq/Trash
 8.The Superuser
+cal
+sudo cal
 9.Changing Ownership
