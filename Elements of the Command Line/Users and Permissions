@@ -20,6 +20,8 @@ chmod g+x config_file_1
 chmod g+x,o=r config_file_2
 chmod a=rwx,o-x d*
 6.The File Status Command
+stat /home/dq/Trash
+answer 0776
 7.Changing Permissions: Octal Notation
 8.The Superuser
 9.Changing Ownership
