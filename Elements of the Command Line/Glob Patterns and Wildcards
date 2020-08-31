@@ -10,6 +10,8 @@ cp augustus a\*
 cp tv 't?'
 ls 'a*' 't?'
 5.The Wildcard []
+cd /home/dq/brats
+ls *[!aiueo]
 6.Other Wildcards
 7.Summary and Practice
 8.Searching for Files
