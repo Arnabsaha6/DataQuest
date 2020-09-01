@@ -6,6 +6,9 @@ alias d=date
 d
 unalias d
 4.Knowing What You're Running
+python -c "print(3/2)"
+type python
+python3 -c "print(3/2)"
 5.Help, man!
 6.Built-in Help
 7.How to Read Synopses
