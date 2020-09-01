@@ -17,5 +17,7 @@ help help
 7.How to Read Synopses
 answer no no yes
 8.Less is More
+cd ~/rg_data
+less -S Arts Education
 9.Next Steps
 10.Takeaways
