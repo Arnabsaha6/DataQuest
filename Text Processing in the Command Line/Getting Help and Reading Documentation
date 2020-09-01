@@ -12,6 +12,8 @@ python3 -c "print(3/2)"
 5.Help, man!
 man bash
 6.Built-in Help
+help type
+help help
 7.How to Read Synopses
 8.Less is More
 9.Next Steps
