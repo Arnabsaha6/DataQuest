@@ -2,6 +2,9 @@
 answer builtin file builtin keyword alias function
 zen
 3.Aliases, Functions and Keywords
+alias d=date
+d
+unalias d
 4.Knowing What You're Running
 5.Help, man!
 6.Built-in Help
