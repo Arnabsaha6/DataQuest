@@ -15,6 +15,8 @@ cd
 sort -t":" -k3,3 characters_no_header
 sort -t":" -k4,4g characters_no_header
 7.Sorting on Multiple Columns
+cd
+sort -t":" -k3,3 -k4,4gr characters_no_header
 8.Selecting Columns
 9.Grep
 10.Extended Regular Expressions
