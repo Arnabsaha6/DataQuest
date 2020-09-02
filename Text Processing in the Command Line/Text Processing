@@ -21,6 +21,9 @@ sort -t":" -k3,3 -k4,4gr characters_no_header
 cd ~/rg_data
 cut -d"," -f2,4-6 "Computers & Mathematics"
 9.Grep
+grep -v '9$' characters_no_header
+cd rg_data
+grep -i ',Math' *
 10.Extended Regular Expressions
 11.Next Steps
 12.Takeaways
