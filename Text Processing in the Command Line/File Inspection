@@ -9,7 +9,10 @@ tail -n +2 Arts
 4.Counting Lines
 answer 12 1469 20 737 17
 5.Pretty Printing
+column characters
+column -s":" -t characters
 6.File Sample
+
 7.Types of Files
 8.Next Steps
 9.Takeaways
