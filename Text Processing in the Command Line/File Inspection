@@ -7,6 +7,7 @@ cd ~/rg_data
 head -n 3 Education
 tail -n +2 Arts
 4.Counting Lines
+answer 12 1469 20 737 17
 5.Pretty Printing
 6.File Sample
 7.Types of Files
