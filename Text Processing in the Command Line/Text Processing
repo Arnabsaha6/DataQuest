@@ -1,4 +1,6 @@
 2.Concatenate
+cd ~/rg_data
+cat *
 3.Cat Abuse
 4.Sorting Files
 5.Beware of Sort
