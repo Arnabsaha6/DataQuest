@@ -1,4 +1,7 @@
 2.Head or Tail
+cd ~/rg_data
+head Physical\ Sciences
+tail 'Physical Sciences'
 3.Option-arguments
 4.Counting Lines
 5.Pretty Printing
