@@ -5,6 +5,10 @@ cat *
 cat Interdisciplinary
 tac Interdisciplinary
 4.Sorting Files
+cd ~/rg_data
+cat Interdisciplinary
+sort Interdisciplinary
+sort -ru Interdisciplinary "Law & Public Policy"
 5.Beware of Sort
 6.Sorting Data Sets
 7.Sorting on Multiple Columns
