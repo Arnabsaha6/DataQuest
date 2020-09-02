@@ -11,6 +11,9 @@ sort Interdisciplinary
 sort -ru Interdisciplinary "Law & Public Policy"
 
 6.Sorting Data Sets
+cd
+sort -t":" -k3,3 characters_no_header
+sort -t":" -k4,4g characters_no_header
 7.Sorting on Multiple Columns
 8.Selecting Columns
 9.Grep
