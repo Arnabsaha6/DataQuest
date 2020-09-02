@@ -3,6 +3,9 @@ cd ~/rg_data
 head Physical\ Sciences
 tail 'Physical Sciences'
 3.Option-arguments
+cd ~/rg_data
+head -n 3 Education
+tail -n +2 Arts
 4.Counting Lines
 5.Pretty Printing
 6.File Sample
