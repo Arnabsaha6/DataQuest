@@ -2,6 +2,8 @@
 cd ~/rg_data
 cat *
 3.Cat Abuse
+cat Interdisciplinary
+tac Interdisciplinary
 4.Sorting Files
 5.Beware of Sort
 6.Sorting Data Sets
