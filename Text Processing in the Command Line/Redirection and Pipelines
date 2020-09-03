@@ -18,5 +18,3 @@ cd ~/rg_data
 sort -u * | wc -l
 8.Trying to Redirect Errors
 echo "This is just going to disappear." >/dev/null
-9.Next Steps
-10.Takeaways
