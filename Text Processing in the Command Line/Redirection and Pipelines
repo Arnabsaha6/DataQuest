@@ -14,6 +14,8 @@ cut -d"," -f1,2,5 math_dataset
 zen | grep "better"
 
 7.The Unix Philosophy
+cd ~/rg_data
+sort -u * | wc -l
 8.Trying to Redirect Errors
 9.Next Steps
 10.Takeaways
