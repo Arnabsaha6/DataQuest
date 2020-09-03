@@ -4,6 +4,8 @@ echo "This is a command line interface."
 grep -hi ',Math' /home/dq/rg_data/* >/home/dq/math_data
 help echo >/home/dq/echo_help
 3.Redirecting Output with >>
+head -n 1 /home/dq/rg_data/Computers\ \&\ Mathematics >>math_dataset
+grep -hi ',Math' /home/dq/rg_data/* >>math_dataset
 4.Creating Empty Files
 5.Why Pipelines?
 6.Using Pipelines
