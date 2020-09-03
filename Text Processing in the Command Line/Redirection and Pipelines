@@ -1,4 +1,5 @@
 1.Printing User Input
+echo "This is a command line interface."
 2.Redirecting Output with >
 3.Redirecting Output with >>
 4.Creating Empty Files
