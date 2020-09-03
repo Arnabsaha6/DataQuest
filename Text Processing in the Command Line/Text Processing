@@ -1,9 +1,11 @@
 2.Concatenate
 cd ~/rg_data
 cat *
+
 3.Cat Abuse
 cat Interdisciplinary
 tac Interdisciplinary
+
 4.Sorting Files
 cd ~/rg_data
 cat Interdisciplinary
@@ -14,16 +16,16 @@ sort -ru Interdisciplinary "Law & Public Policy"
 cd
 sort -t":" -k3,3 characters_no_header
 sort -t":" -k4,4g characters_no_header
+
 7.Sorting on Multiple Columns
 cd
 sort -t":" -k3,3 -k4,4gr characters_no_header
+
 8.Selecting Columns
 cd ~/rg_data
 cut -d"," -f2,4-6 "Computers & Mathematics"
+
 9.Grep
 grep -v '9$' characters_no_header
 cd rg_data
 grep -i ',Math' *
-10.Extended Regular Expressions
-11.Next Steps
-12.Takeaways
