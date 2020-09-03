@@ -7,6 +7,7 @@ help echo >/home/dq/echo_help
 head -n 1 /home/dq/rg_data/Computers\ \&\ Mathematics >>math_dataset
 grep -hi ',Math' /home/dq/rg_data/* >>math_dataset
 4.Creating Empty Files
+touch empty_file_1 empty_file_2
 5.Why Pipelines?
 6.Using Pipelines
 7.The Unix Philosophy
