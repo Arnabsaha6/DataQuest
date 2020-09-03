@@ -11,6 +11,8 @@ touch empty_file_1 empty_file_2
 5.Why Pipelines?
 cut -d"," -f1,2,5 math_dataset
 6.Using Pipelines
+zen | grep "better"
+
 7.The Unix Philosophy
 8.Trying to Redirect Errors
 9.Next Steps
