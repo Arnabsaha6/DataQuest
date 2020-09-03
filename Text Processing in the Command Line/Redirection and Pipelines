@@ -1,6 +1,8 @@
 1.Printing User Input
 echo "This is a command line interface."
 2.Redirecting Output with >
+grep -hi ',Math' /home/dq/rg_data/* >/home/dq/math_data
+help echo >/home/dq/echo_help
 3.Redirecting Output with >>
 4.Creating Empty Files
 5.Why Pipelines?
