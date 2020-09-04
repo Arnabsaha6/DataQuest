@@ -24,4 +24,6 @@ e
 o
 cat sorted_stdin
 9.Redirecting Standard Input
+tr [:lower:] [:upper:] <sorted_stdin
+tr [:lower:] [:upper:] <sorted_stdin >mad_vowels
 10.Next Steps
