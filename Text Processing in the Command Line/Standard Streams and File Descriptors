@@ -11,10 +11,12 @@ cat all_output
 6.Duplicating File Descriptors
 ls /dev/null /home/inexistent >all_output_v2 2>&1
 echo "The first clue is in an image you encountered in this course." >/dev/null 2>&1
+
 7.Order of Redirections
 ls /dev/null /home/inexistent 2>&1 1>redirection_order
 ls /dev/null /home/inexistent >order_verification
 diff -y redirection_order order_verification
+
 8.Standard Input
 sort -u >sorted_stdin
 a
@@ -23,7 +25,7 @@ u
 e
 o
 cat sorted_stdin
+
 9.Redirecting Standard Input
 tr [:lower:] [:upper:] <sorted_stdin
 tr [:lower:] [:upper:] <sorted_stdin >mad_vowels
-10.Next Steps
