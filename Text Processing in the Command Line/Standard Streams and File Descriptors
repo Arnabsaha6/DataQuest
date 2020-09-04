@@ -8,7 +8,6 @@ cd
 ls /dev/null /home/inexistent >all_output 2>all_output
 cat all_output
 
-
 6.Duplicating File Descriptors
 7.Order of Redirections
 8.Standard Input
