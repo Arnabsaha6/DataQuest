@@ -9,6 +9,7 @@ ls /dev/null /home/inexistent >all_output 2>all_output
 cat all_output
 
 4.File Descriptors
+
 5.A New Point of View
 6.Duplicating File Descriptors
 7.Order of Redirections
