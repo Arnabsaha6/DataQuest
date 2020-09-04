@@ -1,4 +1,7 @@
 1.Standard Streams
+cd
+find / -name 'dq' 2>stderr
+ls /home/inexistent 2>>stderr
 2.Recap
 3.Redirecting Two Streams
 4.File Descriptors
