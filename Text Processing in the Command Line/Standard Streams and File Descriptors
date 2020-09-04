@@ -3,7 +3,6 @@ cd
 find / -name 'dq' 2>stderr
 ls /home/inexistent 2>>stderr
 
-
 3.Redirecting Two Streams
 cd
 ls /dev/null /home/inexistent >all_output 2>all_output
