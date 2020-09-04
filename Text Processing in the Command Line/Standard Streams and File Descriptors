@@ -7,6 +7,7 @@ ls /home/inexistent 2>>stderr
 cd
 ls /dev/null /home/inexistent >all_output 2>all_output
 cat all_output
+
 4.File Descriptors
 5.A New Point of View
 6.Duplicating File Descriptors
