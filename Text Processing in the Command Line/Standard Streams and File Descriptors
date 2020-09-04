@@ -9,6 +9,8 @@ ls /dev/null /home/inexistent >all_output 2>all_output
 cat all_output
 
 6.Duplicating File Descriptors
+ls /dev/null /home/inexistent >all_output_v2 2>&1
+echo "The first clue is in an image you encountered in this course." >/dev/null 2>&1
 7.Order of Redirections
 8.Standard Input
 9.Redirecting Standard Input
