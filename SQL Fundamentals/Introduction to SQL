@@ -2,6 +2,9 @@
 SELECT *
   FROM recent_grads;
 4.Understanding your First Query
+SELECT * 
+  FROM recent_grads;
+select * from recent_grads;
 5.Previewing a Table
 6.The LIMIT Clause
 7.Selecting Specific Columns
