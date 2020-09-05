@@ -11,6 +11,8 @@ SELECT *
   FROM recent_grads
  LIMIT 5;
 7.Selecting Specific Columns
+SELECT Major, ShareWomen  
+  FROM recent_grads;
 8.Filtering Rows Using WHERE
 9.Expressing Multiple Filter Criteria Using 'AND'
 10.Returning One of Several Conditions With OR
