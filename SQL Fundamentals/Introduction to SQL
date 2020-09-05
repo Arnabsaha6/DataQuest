@@ -23,6 +23,11 @@ SELECT Major, Major_category, Median, ShareWomen
  WHERE ShareWomen > 0.5 
    AND Median > 50000;
 10.Returning One of Several Conditions With OR
+SELECT Major, Median, Unemployed 
+  FROM recent_grads 
+ WHERE Median >= 10000 
+    OR Men > Women
+ LIMIT 20;
 11.Grouping Operators With Parentheses
 12.Ordering Results Using ORDER BY
 13.Practice Writing a Query
