@@ -1,3 +1,6 @@
+3. Your First Query
+SELECT *
+  FROM recent_grads;
 4.Understanding your First Query
 5.Previewing a Table
 6.The LIMIT Clause
