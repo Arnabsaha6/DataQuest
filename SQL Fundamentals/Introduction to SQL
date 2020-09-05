@@ -1,1 +1,10 @@
-
+2.Introduction to Databases
+3.Your First Query
+4.Understanding your First Query
+5.Previewing a Table
+6.The LIMIT Clause
+7.Selecting Specific Columns
+8.Filtering Rows Using WHERE
+9.Expressing Multiple Filter Criteria Using 'AND'
+10.Returning One of Several Conditions With OR
+11.Grouping Operators With Parentheses
