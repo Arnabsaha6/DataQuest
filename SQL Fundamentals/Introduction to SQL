@@ -7,6 +7,9 @@ SELECT *
 select * from recent_grads;
 5.Previewing a Table
 6.The LIMIT Clause
+SELECT *
+  FROM recent_grads
+ LIMIT 5;
 7.Selecting Specific Columns
 8.Filtering Rows Using WHERE
 9.Expressing Multiple Filter Criteria Using 'AND'
