@@ -18,6 +18,10 @@ SELECT Major, ShareWomen
   FROM recent_grads 
  WHERE ShareWomen < 0.5;
 9.Expressing Multiple Filter Criteria Using 'AND'
+SELECT Major, Major_category, Median, ShareWomen 
+  FROM recent_grads 
+ WHERE ShareWomen > 0.5 
+   AND Median > 50000;
 10.Returning One of Several Conditions With OR
 11.Grouping Operators With Parentheses
 12.Ordering Results Using ORDER BY
