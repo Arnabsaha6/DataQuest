@@ -40,5 +40,11 @@ SELECT Major, ShareWomen, Unemployment_rate
    AND Unemployment_rate < .1
  ORDER BY ShareWomen DESC;
 13.Practice Writing a Query
+SELECT Major_category, Major, Unemployment_rate 
+    FROM recent_grads 
+   WHERE Major_category='Engineering' 
+      OR Major_category='Physical Sciences' 
+ORDER BY Unemployment_rate;
+
 14.Next Steps
 15.Takeaways
