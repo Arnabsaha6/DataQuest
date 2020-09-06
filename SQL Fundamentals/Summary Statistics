@@ -12,6 +12,8 @@ SELECT COUNT(Major)
 SELECT COUNT(*), COUNT(Unemployment_rate)
   FROM recent_grads;
 6.Combining Multiple Aggregation Functions
+SELECT AVG(Total), MIN(Men), MAX(Women)
+  FROM recent_grads;
 7.Customizing the Results
 8.Counting Unique Values
 9.Data Types
