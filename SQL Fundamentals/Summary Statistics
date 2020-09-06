@@ -9,6 +9,8 @@ SELECT COUNT(Major)
   FROM recent_grads
  WHERE ShareWomen < 0.5;
 5.Missing Values
+SELECT COUNT(*), COUNT(Unemployment_rate)
+  FROM recent_grads;
 6.Combining Multiple Aggregation Functions
 7.Customizing the Results
 8.Counting Unique Values
