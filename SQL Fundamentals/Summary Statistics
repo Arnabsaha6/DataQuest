@@ -2,6 +2,8 @@
 SELECT MIN(Unemployment_rate)
   FROM recent_grads;
 3.Aggregate Functions
+SELECT SUM(Total)
+  FROM recent_grads;
 4.Order of Execution
 5.Missing Values
 6.Combining Multiple Aggregation Functions
