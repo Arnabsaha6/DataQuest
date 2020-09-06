@@ -25,6 +25,11 @@ SELECT COUNT(DISTINCT Major ) unique_majors,
   FROM recent_grads;
 9.Data Types
 10.String Functions and Operations
+SELECT 'Major: ' || LOWER(Major) AS Major,
+       Total, Men, Women, Unemployment_rate,
+       LENGTH(Major) AS Length_of_name
+  FROM recent_grads
+ ORDER BY Unemployment_rate DESC;
 11.Performing Arithmetic in SQL
 12.Next Steps
 13.Takeaways
