@@ -31,5 +31,6 @@ SELECT 'Major: ' || LOWER(Major) AS Major,
   FROM recent_grads
  ORDER BY Unemployment_rate DESC;
 11.Performing Arithmetic in SQL
+SELECT Major, Major_category, (P75th - P25th) quartile_spread FROM recent_grads ORDER BY quartile_spread LIMIT 20
 12.Next Steps
 13.Takeaways
