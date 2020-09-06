@@ -1,4 +1,6 @@
 2.A Simple Question
+SELECT MIN(Unemployment_rate)
+  FROM recent_grads;
 3.Aggregate Functions
 4.Order of Execution
 5.Missing Values
