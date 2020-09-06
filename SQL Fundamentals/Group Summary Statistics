@@ -13,3 +13,7 @@ SELECT CASE
 8.Querying Virtual Columns With the HAVING Statement
 9.Order of Execution
 10.Rounding Results With the ROUND() Function
+11.Nesting functions
+12.Casting
+13.Next Steps
+14.Takeaways
