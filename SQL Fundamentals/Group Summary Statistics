@@ -23,6 +23,12 @@ SELECT Major_category,
   FROM recent_grads
  GROUP BY Major_category;
 6.Multiple Summary Statistics by Group
+SELECT Major_category,
+       SUM(Women) AS Total_women,
+       AVG(ShareWomen) AS Mean_women,
+       SUM(Total)*AVG(ShareWomen) AS Estimate_women
+  FROM recent_grads
+ GROUP BY Major_category;
 7.Multiple Group Columns
 8.Querying Virtual Columns With the HAVING Statement
 9.Order of Execution
