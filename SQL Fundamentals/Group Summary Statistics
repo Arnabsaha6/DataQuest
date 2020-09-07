@@ -36,6 +36,11 @@ SELECT Major_category, Sample_category,
   FROM new_grads
  GROUP BY Major_category, Sample_category;
 8.Querying Virtual Columns With the HAVING Statement
+SELECT Major_category,
+       AVG(Low_wage_jobs) / AVG(Total) AS Share_low_wage
+  FROM new_grads
+ GROUP BY Major_category
+HAVING share_low_wage > .1;
 9.Order of Execution
 10.Rounding Results With the ROUND() Function
 11.Nesting functions
