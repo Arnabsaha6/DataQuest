@@ -48,6 +48,11 @@ SELECT ROUND(ShareWomen, 4) AS Rounded_women,
   FROM new_grads
  LIMIT 10;
 11.Nesting functions
+SELECT Major_category,
+       ROUND(AVG(College_jobs) / AVG(Total), 3) AS Share_degree_jobs
+  FROM new_grads
+ GROUP BY Major_category
+HAVING Share_degree_jobs < .3;
 12.Casting
 13.Next Steps
 14.Takeaways
