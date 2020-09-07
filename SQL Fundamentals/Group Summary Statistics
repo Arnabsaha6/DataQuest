@@ -18,6 +18,10 @@ SELECT Major_category, SUM(Total) AS Total_graduates
   FROM recent_grads
  GROUP BY Major_category;
 5.GROUP BY Visual Breakdown
+SELECT Major_category,
+       AVG(ShareWomen) AS Average_women
+  FROM recent_grads
+ GROUP BY Major_category;
 6.Multiple Summary Statistics by Group
 7.Multiple Group Columns
 8.Querying Virtual Columns With the HAVING Statement
