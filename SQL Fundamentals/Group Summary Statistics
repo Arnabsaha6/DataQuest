@@ -14,6 +14,9 @@ SELECT Major, Sample_size,
        END AS Sample_category
   FROM recent_grads;
 4.Calculating Group-Level Summary Statistics
+SELECT Major_category, SUM(Total) AS Total_graduates
+  FROM recent_grads
+ GROUP BY Major_category;
 5.GROUP BY Visual Breakdown
 6.Multiple Summary Statistics by Group
 7.Multiple Group Columns
