@@ -54,5 +54,10 @@ SELECT Major_category,
  GROUP BY Major_category
 HAVING Share_degree_jobs < .3;
 12.Casting
+SELECT Major_category,
+       CAST(SUM(Women) as Float)/Cast(SUM(Total) as Float) AS SW
+  FROM new_grads
+ GROUP BY Major_category
+ ORDER BY SW;
 13.Next Steps
 14.Takeaways
