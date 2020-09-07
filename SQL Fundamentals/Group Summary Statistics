@@ -43,6 +43,10 @@ SELECT Major_category,
 HAVING share_low_wage > .1;
 
 10.Rounding Results With the ROUND() Function
+SELECT ROUND(ShareWomen, 4) AS Rounded_women,
+       Major_category
+  FROM new_grads
+ LIMIT 10;
 11.Nesting functions
 12.Casting
 13.Next Steps
