@@ -59,5 +59,3 @@ SELECT Major_category,
   FROM new_grads
  GROUP BY Major_category
  ORDER BY SW;
-13.Next Steps
-14.Takeaways
