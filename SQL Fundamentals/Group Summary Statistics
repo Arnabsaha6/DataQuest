@@ -41,7 +41,7 @@ SELECT Major_category,
   FROM new_grads
  GROUP BY Major_category
 HAVING share_low_wage > .1;
-9.Order of Execution
+
 10.Rounding Results With the ROUND() Function
 11.Nesting functions
 12.Casting
