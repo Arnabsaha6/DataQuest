@@ -3,6 +3,9 @@ SELECT * FROM facts
 INNER JOIN cities ON cities.facts_id = facts.id
 LIMIT 10;
 2.Understanding Inner Joins
+SELECT c.*, f.name country_name FROM facts f
+INNER JOIN cities c ON c.facts_id = f.id
+LIMIT 5;
 3.Practicing Inner Joins
 4.Left Joins
 5.Right Joins and Outer Joins
