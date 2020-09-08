@@ -1,4 +1,7 @@
 1.Writing More Complex Queries
+SELECT Major, ShareWomen
+  FROM recent_grads
+ WHERE ShareWomen > 0.5225502029537575;
 2.Subqueries
 3.Subquery in SELECT
 4.The IN Operator
