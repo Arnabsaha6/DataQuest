@@ -9,6 +9,13 @@ SELECT Major, Unemployment_rate
                               FROM recent_grads
                            );
 3.Subquery in SELECT
+SELECT CAST(COUNT(*) as FLOAT)/(SELECT COUNT(*)
+                                  FROM recent_grads
+                               ) AS proportion_abv_avg
+  FROM recent_grads
+ WHERE ShareWomen > (SELECT AVG(ShareWomen)
+                       FROM recent_grads
+                    );
 4.The IN Operator
 5.Returning Multiple Results in Subqueries
 6.Building Complex Subqueries
