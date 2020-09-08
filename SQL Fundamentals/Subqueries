@@ -30,6 +30,8 @@ SELECT Major_category, Major
                            LIMIT 3
                          );
 6.Building Complex Subqueries
+SELECT AVG(CAST(Sample_size AS FLOAT)/Total) AS avg_ratio
+  FROM recent_grads;
 7.Practice Integrating A Subquery With The Outer Query
 8.Next Steps
 9.Takeaways
