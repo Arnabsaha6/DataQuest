@@ -39,5 +39,4 @@ SELECT Major, Major_category,
  WHERE ratio > (SELECT AVG(CAST(Sample_size AS FLOAT)/Total) AS avg_ratio 
                   FROM recent_grads
                );
-8.Next Steps
-9.Takeaways
+
