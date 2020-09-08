@@ -1,4 +1,7 @@
 1.Introducing Joins
+SELECT * FROM facts
+INNER JOIN cities ON cities.facts_id = facts.id
+LIMIT 10;
 2.Understanding Inner Joins
 3.Practicing Inner Joins
 4.Left Joins
