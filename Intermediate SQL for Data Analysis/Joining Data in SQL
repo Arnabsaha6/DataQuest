@@ -15,7 +15,6 @@ SELECT f.name country, f.population
 FROM facts f
 LEFT JOIN cities c ON c.facts_id = f.id
 WHERE c.name IS NULL;
-5.Right Joins and Outer Joins
 6.Finding the Most Populous Capital Cities
 SELECT c.name capital_city, f.name country, c.population
 FROM facts f
