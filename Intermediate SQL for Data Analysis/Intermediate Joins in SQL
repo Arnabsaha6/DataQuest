@@ -71,5 +71,3 @@ SELECT
 FROM invoice i
 INNER JOIN customer c ON i.customer_id = c.customer_id
 GROUP BY 1 ORDER BY 1;
-8.Next Steps
-9.Takeaways
