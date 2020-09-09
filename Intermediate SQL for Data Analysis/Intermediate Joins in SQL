@@ -24,6 +24,23 @@ INNER JOIN album al ON al.album_id = t.album_id
 INNER JOIN artist ar on ar.artist_id = al.artist_id
 WHERE il.invoice_id = 4;
 4.Combining Multiple Joins with Subqueries
+SELECT
+    ta.album_title album,
+    ta.artist_name artist,
+    COUNT(*) tracks_purchased
+FROM invoice_line il
+INNER JOIN (
+            SELECT
+                t.track_id,
+                al.title album_title,
+                ar.name artist_name
+            FROM track t
+            INNER JOIN album al ON al.album_id = t.album_id
+            INNER JOIN artist ar ON ar.artist_id = al.artist_id
+           ) ta
+           ON ta.track_id = il.track_id
+GROUP BY 1, 2
+ORDER BY 3 DESC LIMIT 5;
 5.Recursive Joins
 6.Pattern Matching Using Like
 7.Generating Columns With The Case Statement
