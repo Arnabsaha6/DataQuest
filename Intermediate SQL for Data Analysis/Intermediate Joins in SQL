@@ -9,6 +9,7 @@ FROM invoice_line il
 INNER JOIN track t ON t.track_id = il.track_id
 INNER JOIN media_type mt ON mt.media_type_id = t.media_type_id
 WHERE il.invoice_id = 4;
+
 3.Joining More Than Three Tables
 SELECT
     il.track_id,
@@ -23,6 +24,7 @@ INNER JOIN media_type mt ON mt.media_type_id = t.media_type_id
 INNER JOIN album al ON al.album_id = t.album_id
 INNER JOIN artist ar on ar.artist_id = al.artist_id
 WHERE il.invoice_id = 4;
+
 4.Combining Multiple Joins with Subqueries
 SELECT
     ta.album_title album,
@@ -41,6 +43,7 @@ INNER JOIN (
            ON ta.track_id = il.track_id
 GROUP BY 1, 2
 ORDER BY 3 DESC LIMIT 5;
+
 5.Recursive Joins
 SELECT
     e1.first_name || " " || e1.last_name employee_name,
@@ -50,6 +53,7 @@ SELECT
 FROM employee e1
 LEFT JOIN employee e2 ON e1.reports_to = e2.employee_id
 ORDER BY 1;
+
 6.Pattern Matching Using Like
 SELECT
     first_name,
@@ -57,6 +61,7 @@ SELECT
     phone
 FROM customer
 where first_name LIKE "%belle%";
+
 7.Generating Columns With The Case Statement
 SELECT
    c.first_name || " " || c.last_name customer_name,
