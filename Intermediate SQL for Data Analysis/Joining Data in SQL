@@ -7,6 +7,9 @@ SELECT c.*, f.name country_name FROM facts f
 INNER JOIN cities c ON c.facts_id = f.id
 LIMIT 5;
 3.Practicing Inner Joins
+SELECT f.name country, c.name capital_city FROM cities c
+INNER JOIN facts f ON f.id = c.facts_id
+WHERE c.capital = 1
 4.Left Joins
 5.Right Joins and Outer Joins
 6.Finding the Most Populous Capital Cities
