@@ -51,6 +51,12 @@ FROM employee e1
 LEFT JOIN employee e2 ON e1.reports_to = e2.employee_id
 ORDER BY 1;
 6.Pattern Matching Using Like
+SELECT
+    first_name,
+    last_name,
+    phone
+FROM customer
+where first_name LIKE "%belle%";
 7.Generating Columns With The Case Statement
 8.Next Steps
 9.Takeaways
