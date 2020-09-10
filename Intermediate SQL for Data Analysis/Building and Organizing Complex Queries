@@ -29,6 +29,11 @@ CREATE VIEW chinook.customer_gt_90_dollars AS
     HAVING SUM(i.total) > 90;
 SELECT * FROM chinook.customer_gt_90_dollars;
 5.Combining Rows With Union
+SELECT * from customer_usa
+
+UNION
+
+SELECT * from customer_gt_90_dollars;
 6.Combining Rows Using Intersect and Except
 7.Multiple Named Subqueries
 8.Challenge: Each Country's Best Customer
