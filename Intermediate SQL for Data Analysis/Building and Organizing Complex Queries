@@ -112,5 +112,3 @@ SELECT
 FROM customer c
 INNER JOIN country_best_customer cbc ON cbc.customer_id = c.customer_id
 ORDER BY 1 ASC
-9.Next Steps
-10.Takeaways
