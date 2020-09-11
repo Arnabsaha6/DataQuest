@@ -13,6 +13,7 @@
 #  sqlite3> .help
 #  sqlite3> .shell clear
 #  sqlite3> .quit
+
 2.Creating Tables
 sqlite3 new_database.db <<EOF
 CREATE TABLE user (
@@ -21,6 +22,7 @@ CREATE TABLE user (
     last_name TEXT
 );
 EOF
+
 3.Primary and Foreign Keys
 sqlite3 chinook.db <<EOF
 CREATE TABLE wishlist (
@@ -30,6 +32,7 @@ CREATE TABLE wishlist (
     FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
 );
 EOF
+
 4.Database Normalization
 sqlite3 chinook.db <<EOF
 CREATE TABLE wishlist_track (
@@ -40,6 +43,7 @@ CREATE TABLE wishlist_track (
     FOREIGN KEY (track_id) REFERENCES track(track_id)
 );
 EOF
+
 5.Inserting and Deleting Rows
 sqlite3 chinook.db <<EOF
 INSERT INTO wishlist
@@ -54,6 +58,7 @@ VALUES
     (2, 3272),
     (2, 3470);
 EOF
+
 6.Adding Columns to a Table
 sqlite3 chinook.db <<EOF
 ALTER TABLE wishlist
@@ -61,6 +66,7 @@ ADD COLUMN active NUMERIC;
 ALTER TABLE wishlist_track
 ADD COLUMN active NUMERIC;
 EOF
+
 7.Adding Values to Existing Rows
 sqlite3 chinook.db <<EOF
 UPDATE wishlist
@@ -68,6 +74,7 @@ SET active = 1;
 UPDATE wishlist_track
 SET active = 1;
 EOF
+
 8.Challenge: Adding Sales Tax Capabilities
 sqlite3 chinook.db <<EOF
 ALTER TABLE invoice
