@@ -14,6 +14,13 @@
 #  sqlite3> .shell clear
 #  sqlite3> .quit
 2.Creating Tables
+sqlite3 new_database.db <<EOF
+CREATE TABLE user (
+    user_id INTEGER,
+    first_name TEXT,
+    last_name TEXT
+);
+EOF
 3.Primary and Foreign Keys
 4.Database Normalization
 5.Inserting and Deleting Rows
