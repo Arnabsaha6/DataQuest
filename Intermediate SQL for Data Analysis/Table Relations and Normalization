@@ -62,6 +62,12 @@ ALTER TABLE wishlist_track
 ADD COLUMN active NUMERIC;
 EOF
 7.Adding Values to Existing Rows
+sqlite3 chinook.db <<EOF
+UPDATE wishlist
+SET active = 1;
+UPDATE wishlist_track
+SET active = 1;
+EOF
 8.Challenge: Adding Sales Tax Capabilities
 9.Next Steps
 10.Takeaways
