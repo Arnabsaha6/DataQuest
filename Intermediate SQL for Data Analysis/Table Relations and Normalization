@@ -31,6 +31,15 @@ CREATE TABLE wishlist (
 );
 EOF
 4.Database Normalization
+sqlite3 chinook.db <<EOF
+CREATE TABLE wishlist_track (
+    wishlist_id INTEGER,
+    track_id INTEGER,
+    PRIMARY KEY (wishlist_id, track_id),
+    FOREIGN KEY (wishlist_id) REFERENCES wishlist(wishlist_id),
+    FOREIGN KEY (track_id) REFERENCES track(track_id)
+);
+EOF
 5.Inserting and Deleting Rows
 6.Adding Columns to a Table
 7.Adding Values to Existing Rows
