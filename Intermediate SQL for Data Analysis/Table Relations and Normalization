@@ -22,6 +22,14 @@ CREATE TABLE user (
 );
 EOF
 3.Primary and Foreign Keys
+sqlite3 chinook.db <<EOF
+CREATE TABLE wishlist (
+    wishlist_id INTEGER PRIMARY KEY,
+    customer_id INTEGER,
+    name TEXT,
+    FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
+);
+EOF
 4.Database Normalization
 5.Inserting and Deleting Rows
 6.Adding Columns to a Table
