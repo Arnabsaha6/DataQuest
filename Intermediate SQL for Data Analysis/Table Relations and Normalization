@@ -69,5 +69,15 @@ UPDATE wishlist_track
 SET active = 1;
 EOF
 8.Challenge: Adding Sales Tax Capabilities
+sqlite3 chinook.db <<EOF
+ALTER TABLE invoice
+ADD COLUMN tax NUMERIC;
+ALTER TABLE invoice
+ADD COLUMN subtotal NUMERIC;
+UPDATE invoice
+SET
+    tax = 0,
+    subtotal = total;
+EOF
 9.Next Steps
 10.Takeaways
