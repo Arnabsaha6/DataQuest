@@ -28,4 +28,3 @@ conn = sqlite3.connect("jobs2.db")
 query = "select Major from recent_grads order by Major desc;"
 reverse_alphabetical = conn.cursor().execute(query).fetchall()
 conn.close()
-11.Next Steps
