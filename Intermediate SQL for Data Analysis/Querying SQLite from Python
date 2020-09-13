@@ -29,4 +29,3 @@ query = "select Major from recent_grads order by Major desc;"
 reverse_alphabetical = conn.cursor().execute(query).fetchall()
 conn.close()
 11.Next Steps
-12.Takeaways
