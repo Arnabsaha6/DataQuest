@@ -24,5 +24,9 @@ five_results = cursor.fetchmany(5)
 conn = sqlite3.connect("jobs.db")
 conn.close()
 10.Practice
+conn = sqlite3.connect("jobs2.db")
+query = "select Major from recent_grads order by Major desc;"
+reverse_alphabetical = conn.cursor().execute(query).fetchall()
+conn.close()
 11.Next Steps
 12.Takeaways
