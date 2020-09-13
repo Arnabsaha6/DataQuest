@@ -1,7 +1,6 @@
 3.Connecting to the Database
 import sqlite3
 conn = sqlite3.connect("jobs.db")
-5.Working With Sequences of Values as Tuples
 6.Creating a Cursor and Running a Query
 7.Execute as a Shortcut for Running a Query
 8.Fetching a Specific Number of Results
