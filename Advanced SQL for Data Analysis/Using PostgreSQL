@@ -42,4 +42,3 @@ conn.autocommit = True
 cur = conn.cursor()
 cur.execute("DROP DATABASE income;")
 conn.close()
-10.Next steps
