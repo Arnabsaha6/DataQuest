@@ -10,6 +10,11 @@ cur = conn.cursor()
 cur.execute("CREATE TABLE notes(id integer PRIMARY KEY, body text, title text)")
 conn.close()
 5.SQL Transactions
+conn = psycopg2.connect("dbname=dq user=dq")
+cur = conn.cursor()
+cur.execute("CREATE TABLE notes(id integer PRIMARY KEY, body text, title text)")
+conn.commit()
+conn.close()
 6.Autocommitting
 7.Executing queries
 8.Creating a database
