@@ -1,4 +1,9 @@
 3.Psycopg2
+import psycopg2
+conn = psycopg2.connect("dbname=dq user=dq")
+cur = conn.cursor()
+print(cur)
+conn.close()
 4.Creating a table
 5.SQL Transactions
 6.Autocommitting
