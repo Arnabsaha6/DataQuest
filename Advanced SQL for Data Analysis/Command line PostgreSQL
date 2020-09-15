@@ -19,6 +19,9 @@ CREATE TABLE deposits (
 );
 EOF
 5.Creating users
+psql <<EOF
+CREATE ROLE sec WITH LOGIN CREATEDB PASSWORD 'test';
+EOF
 6.Adding permissions
 7.Removing permissions
 8.Superusers
