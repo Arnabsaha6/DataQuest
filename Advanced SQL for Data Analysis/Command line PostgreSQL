@@ -7,6 +7,9 @@ psql <<EOF
 CREATE DATABASE bank_accounts;
 EOF
 3.Special PostgreSQL commands
+psql <<EOF
+\l
+EOF
 4.Switching databases
 5.Creating users
 6.Adding permissions
