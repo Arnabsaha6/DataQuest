@@ -27,5 +27,8 @@ psql -d bank_accounts <<EOF
 GRANT ALL PRIVILEGES ON deposits TO sec;
 EOF
 7.Removing permissions
+psql -d bank_accounts <<EOF
+REVOKE ALL PRIVILEGES ON deposits FROM sec;
+EOF
 8.Superusers
 9.Takeaways
