@@ -34,4 +34,3 @@ EOF
 psql <<EOF
 CREATE ROLE aig WITH LOGIN PASSWORD 'test' SUPERUSER;
 EOF
-9.Takeaways
