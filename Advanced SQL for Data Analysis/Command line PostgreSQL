@@ -1,4 +1,7 @@
 1.The psql tool
+psql <<EOF
+EOF
+/q
 2.Running SQL queries
 3.Special PostgreSQL commands
 4.Switching databases
