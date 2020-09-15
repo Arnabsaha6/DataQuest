@@ -31,4 +31,7 @@ psql -d bank_accounts <<EOF
 REVOKE ALL PRIVILEGES ON deposits FROM sec;
 EOF
 8.Superusers
+psql <<EOF
+CREATE ROLE aig WITH LOGIN PASSWORD 'test' SUPERUSER;
+EOF
 9.Takeaways
