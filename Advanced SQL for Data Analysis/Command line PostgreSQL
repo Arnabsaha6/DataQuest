@@ -3,6 +3,9 @@ psql <<EOF
 EOF
 /q
 2.Running SQL queries
+psql <<EOF
+CREATE DATABASE bank_accounts;
+EOF
 3.Special PostgreSQL commands
 4.Switching databases
 5.Creating users
