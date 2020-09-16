@@ -17,7 +17,6 @@ print(query_plan_three)
 query_plan_four = conn.execute("explain query plan select * from facts where id = 20;").fetchall()
 print(query_plan_four)
 
-7.Indexing
 9.All together now
 query_plan_six = conn.execute("explain query plan select * from facts where population > 10000 ;").fetchall()
 print(query_plan_six)
