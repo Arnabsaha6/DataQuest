@@ -18,7 +18,6 @@ query_plan_four = conn.execute("explain query plan select * from facts where id 
 print(query_plan_four)
 6.Search and rowid
 7.Indexing
-8.Create an index
 9.All together now
 query_plan_six = conn.execute("explain query plan select * from facts where population > 10000 ;").fetchall()
 print(query_plan_six)
