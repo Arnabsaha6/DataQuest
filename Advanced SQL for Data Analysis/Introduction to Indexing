@@ -25,4 +25,3 @@ print(query_plan_six)
 conn.execute("create index if not exists pop_idx on facts(population)")
 query_plan_seven = conn.execute("explain query plan select * from facts where population > 10000 ;").fetchall()
 print(query_plan_seven)
-10.Next steps
