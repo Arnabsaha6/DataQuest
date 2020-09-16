@@ -13,7 +13,6 @@ query_plan_three = conn.execute("explain query plan select * from facts where na
 print(query_plan_one)
 print(query_plan_two)
 print(query_plan_three)
-4.Data representation
 5.Time complexity
 query_plan_four = conn.execute("explain query plan select * from facts where id = 20;").fetchall()
 print(query_plan_four)
