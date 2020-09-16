@@ -14,6 +14,8 @@ print(query_plan_two)
 print(query_plan_three)
 4.Data representation
 5.Time complexity
+query_plan_four = conn.execute("explain query plan select * from facts where id = 20;").fetchall()
+print(query_plan_four)
 6.Search and rowid
 7.Indexing
 8.Create an index
