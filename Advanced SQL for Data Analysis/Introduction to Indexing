@@ -1,4 +1,9 @@
 1.Introduction
+import sqlite3
+conn = sqlite3.connect("factbook.db")
+schema = conn.execute("pragma table_info(facts);").fetchall()
+for s in schema:
+    print(s)
 2.Query planner
 3.Explain query plan
 4.Data representation
