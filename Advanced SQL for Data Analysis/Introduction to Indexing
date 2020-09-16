@@ -4,6 +4,7 @@ conn = sqlite3.connect("factbook.db")
 schema = conn.execute("pragma table_info(facts);").fetchall()
 for s in schema:
     print(s)
+
 3.Explain query plan
 query_plan_one = conn.execute("explain query plan select * from facts where area > 40000;").fetchall()
 query_plan_two = conn.execute("explain query plan select area from facts where area > 40000;").fetchall()
