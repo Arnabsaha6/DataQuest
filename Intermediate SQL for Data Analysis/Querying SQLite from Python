@@ -1,6 +1,7 @@
 3.Connecting to the Database
 import sqlite3
 conn = sqlite3.connect("jobs.db")
+
 6.Creating a Cursor and Running a Query
 import sqlite3
 conn = sqlite3.connect("jobs.db")
