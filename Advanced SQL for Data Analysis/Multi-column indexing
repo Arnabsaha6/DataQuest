@@ -12,6 +12,10 @@ print(query_plan_two)
 4.Explanation
 5.Multi-column index
 6.Creating a multi-column index
+conn = sqlite3.connect("factbook.db")
+conn.execute("create index if not exists pop_pop_growth_idx on facts(population, population_growth);")
+query_plan_three = conn.execute("explain query plan select * from facts where population > 1000000 and population_growth < 0.05;").fetchall()
+print(query_plan_three)
 7.Covering index
 8.Covering index for single column
 9.Conclusion
