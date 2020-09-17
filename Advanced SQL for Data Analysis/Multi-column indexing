@@ -1,4 +1,8 @@
 2.Query Plan
+import sqlite3
+conn = sqlite3.connect("factbook.db")
+query_plan_one = conn.execute("explain query plan select * from facts where population > 1000000 and population_growth < 0.05;").fetchall()
+print(query_plan_one)
 3.Query plan for multi-column queries
 4.Explanation
 5.Multi-column index
