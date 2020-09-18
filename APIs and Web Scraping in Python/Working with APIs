@@ -39,5 +39,7 @@ print(type(json_data))
 print(json_data)
 first_pass_duration = json_data["response"][0]["duration"]
 9.Content Type
+print(response.headers)
+content_type = response.headers["content-type"]
 10.Finding the Number of People in Space
 11.Takeaways
