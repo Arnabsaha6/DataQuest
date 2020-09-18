@@ -42,4 +42,7 @@ first_pass_duration = json_data["response"][0]["duration"]
 print(response.headers)
 content_type = response.headers["content-type"]
 10.Finding the Number of People in Space
+response = requests.get("http://api.open-notify.org/astros.json")
+json_data = response.json()
+in_space_count = json_data["number"]
 11.Takeaways
