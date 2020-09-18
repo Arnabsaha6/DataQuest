@@ -32,6 +32,12 @@ fast_food_franchise_string = json.dumps(fast_food_franchise)
 print(type(fast_food_franchise_string))
 fast_food_franchise_2 = json.loads(fast_food_franchise_string)
 8.Getting JSON From a Request
+parameters = {"lat": 37.78, "lon": -122.41}
+response = requests.get("http://api.open-notify.org/iss-pass.json", params=parameters)
+json_data = response.json()
+print(type(json_data))
+print(json_data)
+first_pass_duration = json_data["response"][0]["duration"]
 9.Content Type
 10.Finding the Number of People in Space
 11.Takeaways
