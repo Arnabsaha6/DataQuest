@@ -8,6 +8,13 @@ status_code = response.status_code
 response = requests.get("http://api.open-notify.org/iss-pass.json")
 status_code = response.status_code
 6.Adding Query Parameters
+parameters = {"lat": 40.71, "lon": -74}
+response = requests.get("http://api.open-notify.org/iss-pass.json", params=parameters)
+print(response.content)
+print(response.content)
+parameters = {"lat": 37.78, "lon": -122.41}
+response = requests.get("http://api.open-notify.org/iss-pass.json", params=parameters)
+content = response.content
 7.JSON Format
 8.Getting JSON From a Request
 9.Content Type
