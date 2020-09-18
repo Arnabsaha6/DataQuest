@@ -5,6 +5,8 @@ status_code = response.status_code
 response = requests.get("http://api.open-notify.org/iss-pass")
 status_code = response.status_code
 5.Hitting the Right Endpoint
+response = requests.get("http://api.open-notify.org/iss-pass.json")
+status_code = response.status_code
 6.Adding Query Parameters
 7.JSON Format
 8.Getting JSON From a Request
