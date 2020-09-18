@@ -45,4 +45,3 @@ content_type = response.headers["content-type"]
 response = requests.get("http://api.open-notify.org/astros.json")
 json_data = response.json()
 in_space_count = json_data["number"]
-11.Takeaways
