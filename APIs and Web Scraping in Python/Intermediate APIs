@@ -39,5 +39,3 @@ response = requests.delete("https://api.github.com/repos/VikParuchuri/test", hea
 print(response.status_code)
 response = requests.delete("https://api.github.com/repos/VikParuchuri/learning-about-apis", headers=headers)
 status = response.status_code
-10.Further Exploration
-11.Takeaways
