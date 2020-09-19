@@ -1,4 +1,9 @@
 2.API Authentication
+headers = {"Authorization": "token 1f36137fbbe1602f779300dad26e4c1b7fbab631"}
+response = requests.get("https://api.github.com/users/VikParuchuri", headers=headers)
+print(response.json())
+response = requests.get("https://api.github.com/users/VikParuchuri/orgs", headers=headers)
+orgs = response.json()
 3.Endpoints and Objects
 4.Other Objects
 5.Pagination
