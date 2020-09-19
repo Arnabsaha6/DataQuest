@@ -35,5 +35,9 @@ payload = {"description": "Learning about requests!", "name": "learning-about-ap
 response = requests.patch("https://api.github.com/repos/VikParuchuri/learning-about-apis", json=payload, headers=headers)
 status = response.status_code
 9.DELETE Requests
+response = requests.delete("https://api.github.com/repos/VikParuchuri/test", headers=headers)
+print(response.status_code)
+response = requests.delete("https://api.github.com/repos/VikParuchuri/learning-about-apis", headers=headers)
+status = response.status_code
 10.Further Exploration
 11.Takeaways
