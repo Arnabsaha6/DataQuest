@@ -8,6 +8,8 @@ orgs = response.json()
 response = requests.get("https://api.github.com/users/torvalds", headers=headers)
 torvalds = response.json()
 4.Other Objects
+response = requests.get("https://api.github.com/repos/octocat/Hello-World", headers=headers)
+hello_world = response.json()
 5.Pagination
 6.User-Level Endpoints
 7.POST Requests
