@@ -11,6 +11,12 @@ torvalds = response.json()
 response = requests.get("https://api.github.com/repos/octocat/Hello-World", headers=headers)
 hello_world = response.json()
 5.Pagination
+params = {"per_page": 50, "page": 1}
+response = requests.get("https://api.github.com/users/VikParuchuri/starred", headers=headers, params=params)
+page1_repos = response.json()
+params = {"per_page": 50, "page": 2}
+response = requests.get("https://api.github.com/users/VikParuchuri/starred", headers=headers, params=params)
+page2_repos = response.json()
 6.User-Level Endpoints
 7.POST Requests
 8.PUT/PATCH Requests
