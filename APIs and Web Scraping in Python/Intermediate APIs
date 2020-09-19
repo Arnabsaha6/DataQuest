@@ -28,6 +28,12 @@ payload = {"name": "learning-about-apis"}
 response = requests.post("https://api.github.com/user/repos", json=payload, headers=headers)
 status = response.status_code
 8.PUT/PATCH Requests
+payload = {"description": "The best repository ever!", "name": "test"}
+response = requests.patch("https://api.github.com/repos/VikParuchuri/test", json=payload, headers=headers)
+print(response.status_code)
+payload = {"description": "Learning about requests!", "name": "learning-about-apis"}
+response = requests.patch("https://api.github.com/repos/VikParuchuri/learning-about-apis", json=payload, headers=headers)
+status = response.status_code
 9.DELETE Requests
 10.Further Exploration
 11.Takeaways
