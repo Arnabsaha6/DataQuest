@@ -39,6 +39,13 @@ first_outer_paragraph = parser.find_all("p", class_="outer-text")[0]
 first_outer_paragraph_text = first_outer_paragraph.text
 7.CSS Selectors
 8.Using CSS Selectors
+response = requests.get("http://dataquestio.github.io/web-scraping-pages/ids_and_classes.html")
+content = response.content
+parser = BeautifulSoup(content, 'html.parser')
+first_items = parser.select(".first-item")
+print(first_items[0].text)
+first_outer_text = parser.select(".outer-text")[0].text
+second_text = parser.select("#second")[0].text
 9.Nesting CSS Selectors
 10.Using Nested CSS Selectors
 11.Beyond the Basics
