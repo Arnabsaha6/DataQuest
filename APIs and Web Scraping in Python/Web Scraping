@@ -45,7 +45,7 @@ first_items = parser.select(".first-item")
 print(first_items[0].text)
 first_outer_text = parser.select(".outer-text")[0].text
 second_text = parser.select("#second")[0].text
-9.Nesting CSS Selectors
+
 10.Using Nested CSS Selectors
 response = requests.get("http://dataquestio.github.io/web-scraping-pages/2014_super_bowl.html")
 content = response.content
