@@ -57,5 +57,3 @@ print(seahawks_turnovers_count)
 patriots_total_plays_count = parser.select("#total-plays")[0].select("td")[2].text
 seahawks_total_yards_count = parser.select("#total-yards")[0].select("td")[1].text
 11.Beyond the Basics
-12.Takeaways
-
