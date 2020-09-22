@@ -1,4 +1,3 @@
-Introduction
 2.Web Page Structure
 response = requests.get("http://dataquestio.github.io/web-scraping-pages/simple.html")
 content = response.content
