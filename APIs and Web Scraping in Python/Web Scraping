@@ -20,6 +20,13 @@ head = parser.find_all("head")
 title = head[0].find_all("title")
 title_text = title[0].text
 5.Element IDs
+response = requests.get("http://dataquestio.github.io/web-scraping-pages/simple_ids.html")
+content = response.content
+parser = BeautifulSoup(content, 'html.parser')
+first_paragraph = parser.find_all("p", id="first")[0]
+print(first_paragraph.text)
+second_paragraph = parser.find_all("p", id="second")[0]
+second_paragraph_text = second_paragraph.text
 6.Element Classes
 7.CSS Selectors
 8.Using CSS Selectors
