@@ -3,6 +3,14 @@ Introduction
 response = requests.get("http://dataquestio.github.io/web-scraping-pages/simple.html")
 content = response.content
 3.Retrieving Elements from a Page
+from bs4 import BeautifulSoup
+parser = BeautifulSoup(content, 'html.parser')
+body = parser.body
+p = body.p
+print(p.text)
+head = parser.head
+title = head.title
+title_text = title.text
 4.Using Find All
 5.Element IDs
 6.Element Classes
