@@ -1,5 +1,7 @@
 Introduction
 2.Web Page Structure
+response = requests.get("http://dataquestio.github.io/web-scraping-pages/simple.html")
+content = response.content
 3.Retrieving Elements from a Page
 4.Using Find All
 5.Element IDs
