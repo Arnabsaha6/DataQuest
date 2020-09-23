@@ -24,6 +24,20 @@ best_churn["nr_of_transactions"] = group_by_customer.size()
 best_churn["amount_spent"] = group_by_customer.sum()
 best_churn.drop("trans_date", axis="columns", inplace=True)
 6.Ranking Customers
+best_churn["scaled_tran"] = (best_churn["nr_of_transactions"] \
+                             - best_churn["nr_of_transactions"].min()) \
+                             / (best_churn["nr_of_transactions"].max() \
+                             - best_churn["nr_of_transactions"].min())
+
+best_churn["scaled_amount"] = (best_churn["amount_spent"] \
+                               -best_churn["amount_spent"].min()) \
+                               / (best_churn["amount_spent"].max() \
+                               - best_churn["amount_spent"].min())
+
+best_churn["score"] = 100*(.5*best_churn["scaled_tran"] \
+                           + .5*best_churn["scaled_amount"])
+
+best_churn.sort_values("score", inplace=True, ascending=False)
 7.Determining a Threshold
 8.Delivering the Results
 9.Next steps
