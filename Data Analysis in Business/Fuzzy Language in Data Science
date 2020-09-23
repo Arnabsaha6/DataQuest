@@ -28,15 +28,12 @@ best_churn["scaled_tran"] = (best_churn["nr_of_transactions"] \
                              - best_churn["nr_of_transactions"].min()) \
                              / (best_churn["nr_of_transactions"].max() \
                              - best_churn["nr_of_transactions"].min())
-
 best_churn["scaled_amount"] = (best_churn["amount_spent"] \
                                -best_churn["amount_spent"].min()) \
                                / (best_churn["amount_spent"].max() \
                                - best_churn["amount_spent"].min())
-
 best_churn["score"] = 100*(.5*best_churn["scaled_tran"] \
                            + .5*best_churn["scaled_amount"])
-
 best_churn.sort_values("score", inplace=True, ascending=False)
 7.Determining a Threshold
 8.Delivering the Results
