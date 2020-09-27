@@ -1,4 +1,9 @@
 2.The Scenario
+import pandas as pd
+playstore = pd.read_csv("googleplaystore.csv")
+print(playstore.shape)
+answer="no"
+playstore.drop(labels=10472, inplace=True)
 3.Cleaning the Data
 4.Removing Duplicates
 5.Exploring the Price
