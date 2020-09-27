@@ -38,6 +38,21 @@ affordable_apps["affordability"] = affordable_apps.apply(
 )
 
 6.Price vs. Rating
+cheap = affordable_apps["Price"] < 5
+reasonable = affordable_apps["Price"] >= 5
+cheap_mean = affordable_apps.loc[cheap, "Price"].mean()
+
+affordable_apps.loc[cheap, "price_criterion"] = affordable_apps["Price"].apply(
+    lambda price: 1 if price < cheap_mean else 0
+)
+
+affordable_apps[reasonable].plot(kind="scatter", x="Price", y="Rating")
+
+reasonable_mean = affordable_apps.loc[reasonable, "Price"].mean()
+
+affordable_apps.loc[reasonable,"price_criterion"] = affordable_apps["Price"].apply(
+    lambda price: 1 if price < reasonable_mean else 0
+)
 7.Price vs Category and Genres
 8.Results and Impact
 9.Next Steps
