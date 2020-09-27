@@ -22,6 +22,10 @@ paid["Size"] = paid["Size"].apply(clean_size).astype(float)
 paid.info()
 
 4.Removing Duplicates
+paid.sort_values("Reviews", ascending=False, inplace=True)
+paid.drop_duplicates("App", inplace=True)
+print(paid.duplicated("App").sum())
+paid.reset_index(inplace=True, drop=True)
 5.Exploring the Price
 6.Price vs. Rating
 7.Price vs Category and Genres
