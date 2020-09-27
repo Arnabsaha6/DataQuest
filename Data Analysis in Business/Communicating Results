@@ -20,6 +20,7 @@ paid.drop("Type", axis="columns", inplace=True)
 paid["Reviews"] = paid["Reviews"].astype(int)
 paid["Size"] = paid["Size"].apply(clean_size).astype(float)
 paid.info()
+
 4.Removing Duplicates
 5.Exploring the Price
 6.Price vs. Rating
