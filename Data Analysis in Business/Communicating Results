@@ -36,6 +36,7 @@ affordable_apps["affordability"] = affordable_apps.apply(
     lambda row: "cheap" if row["Price"] < 5 else "reasonable",
     axis=1
 )
+
 6.Price vs. Rating
 7.Price vs Category and Genres
 8.Results and Impact
