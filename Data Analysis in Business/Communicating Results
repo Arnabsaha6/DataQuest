@@ -51,6 +51,51 @@ affordable_apps.loc[reasonable,"price_criterion"] = affordable_apps["Price"].app
 )
 
 7.Price vs Category and Genres
+affordable_apps["genre_count"] = affordable_apps["Genres"].str.count(";")+1
+
+genres_mean = affordable_apps.groupby(
+    ["affordability", "genre_count"]
+).mean()[["Price"]]
+
+
+def label_genres(row):
+    """For each segment in `genres_mean`,
+    labels the apps that cost less than its segment's mean with `1`
+    and the others with `0`."""
+
+    aff = row["affordability"]
+    gc = row["genre_count"]
+    price = row["Price"]
+
+    if price < genres_mean.loc[(aff, gc)][0]:
+        return 1
+    else:
+        return 0
+
+affordable_apps["genre_criterion"] = affordable_apps.apply(
+    label_genres, axis="columns"
+)
+categories_mean = affordable_apps.groupby(
+    ["affordability", "Category"]
+).mean()[["Price"]]
+
+def label_categories(row):
+    """For each segment in `categories_mean`,
+    labels the apps that cost less than its segment's mean with `1`
+    and the others with `0`."""
+
+    aff = row["affordability"]
+    cat = row["Category"]
+    price = row["Price"]
+
+    if price < categories_mean.loc[(aff, cat)][0]:
+        return 1
+    else:
+        return 0
+
+affordable_apps["category_criterion"] = affordable_apps.apply(
+    label_categories, axis="columns"
+)
 8.Results and Impact
 9.Next Steps
 10.Communicating Your Work I
