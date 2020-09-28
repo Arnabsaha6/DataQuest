@@ -114,5 +114,3 @@ affordable_apps["Impact"] = (affordable_apps["New Price"]-affordable_apps["Price
 
 total_impact = affordable_apps["Impact"].sum()
 print(total_impact)
-
-11.Communicating Your Work II
