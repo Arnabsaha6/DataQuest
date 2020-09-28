@@ -96,6 +96,7 @@ def label_categories(row):
 affordable_apps["category_criterion"] = affordable_apps.apply(
     label_categories, axis="columns"
 )
+
 8.Results and Impact
 9.Next Steps
 10.Communicating Your Work I
