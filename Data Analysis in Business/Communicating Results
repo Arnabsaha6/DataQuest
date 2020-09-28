@@ -116,6 +116,7 @@ total_impact = affordable_apps["Impact"].sum()
 print(total_impact)
 
 9.Next Steps
+
 10.Communicating Your Work I
 11.Communicating Your Work II
 12.Business Workflow
