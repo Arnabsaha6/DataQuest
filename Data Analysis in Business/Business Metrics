@@ -4,6 +4,15 @@ ans21 = "no"
 ans22 = "yes"
 
 3.Introduction to the Net Promoter Score
+def categorize(score):
+    """Returns NPS category"""
+    if score in range(0,7):
+        return "Detractor"
+    elif score in (7, 8):
+        return "Passive"
+    elif score in (9,10):
+        return "Promoter"
+    return None
 4.Net Promoter Score
 5.Analyzing NPS
 6.Customer Churn
