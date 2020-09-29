@@ -13,6 +13,7 @@ def categorize(score):
     elif score in (9,10):
         return "Promoter"
     return None
+    
 4.Net Promoter Score
 5.Analyzing NPS
 6.Customer Churn
