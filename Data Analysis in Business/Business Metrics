@@ -30,7 +30,10 @@ nps["nps"] = (nps["Promoter"]-nps["Detractor"])/nps["total_responses"]
 nps["nps"] = (100*nps["nps"]).astype(int)
 
 6.Customer Churn
-
+import pandas as pd
+subs = pd.read_csv("muscle_labs.csv", parse_dates=["end_date", "start_date"])
+subs["churn_month"] = subs["end_date"].dt.year*100 + subs["end_date"].dt.month
+monthly_churn = pd.DataFrame({"total_churned": subs.groupby("churn_month").size()})
 7.Date Wrangling
 8.Churn Rate
 9.Investigating Churn
