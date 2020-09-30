@@ -30,6 +30,7 @@ nps["nps"] = (nps["Promoter"]-nps["Detractor"])/nps["total_responses"]
 nps["nps"] = (100*nps["nps"]).astype(int)
 
 6.Customer Churn
+
 7.Date Wrangling
 8.Churn Rate
 9.Investigating Churn
