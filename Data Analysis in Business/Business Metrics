@@ -72,7 +72,6 @@ ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
 ax.get_legend().remove()
 
-9.Investigating Churn
 10.Analyzing Churn
 11.Next Steps
 12.Takeaways
