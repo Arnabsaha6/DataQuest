@@ -51,13 +51,11 @@ def get_customers(yearmonth):
     year = yearmonth//100
     month = yearmonth-year*100
     date = dt.datetime(year, month, 1)
-    
     return ((subs["start_date"] < date) & (date <= subs["end_date"])).sum()
 
 churn["total_customers"] = churn["yearmonth"].apply(get_customers)
 churn["churn_rate"] = churn["total_churned"] / churn["total_customers"]
 churn["yearmonth"] = churn["yearmonth"].astype(str)
-
 arange = __import__("numpy").arange
 Ellipse = __import__("matplotlib").patches.Ellipse
 ax = churn.plot(x="yearmonth", y="churn_rate", figsize=(12,6), rot=45, marker=".")
@@ -73,6 +71,7 @@ ax.xaxis.label.set_visible(False)
 ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
 ax.get_legend().remove()
+
 9.Investigating Churn
 10.Analyzing Churn
 11.Next Steps
