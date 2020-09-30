@@ -29,7 +29,6 @@ nps["total_responses"] = nps.sum(axis="columns")
 nps["nps"] = (nps["Promoter"]-nps["Detractor"])/nps["total_responses"]
 nps["nps"] = (100*nps["nps"]).astype(int)
 
-5.Analyzing NPS
 6.Customer Churn
 7.Date Wrangling
 8.Churn Rate
