@@ -36,6 +36,7 @@ subs["churn_month"] = subs["end_date"].dt.year*100 + subs["end_date"].dt.month
 monthly_churn = pd.DataFrame({"total_churned": subs.groupby("churn_month").size()})
 
 7.Date Wrangling
+
 8.Churn Rate
 9.Investigating Churn
 10.Analyzing Churn
