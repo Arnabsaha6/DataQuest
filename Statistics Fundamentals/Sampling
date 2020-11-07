@@ -1,4 +1,15 @@
 3.Populations and Samples
+question1 = ''
+question2 = ''
+question3 = ''
+question4 = ''
+question5 = ''
+question1 = 'population'
+question2 = 'population'
+question3 = 'sample'
+question4 = 'population'
+question5 = 'sample'
+
 4.Sampling Error
 5.Simple Random Sampling
 6.The Importance of Sample Size
